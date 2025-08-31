@@ -1,21 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>801 Home Lab – Raspberry Pi & n8n</title>
   <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; margin: 2rem; }
-    .card { max-width: 720px; margin: 0 auto; padding: 2rem; border: 1px solid #ddd; border-radius: 16px; }
-    h1 { margin-top: 0; }
-    a { text-decoration: none; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #222, #444);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    main h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #00ff99;
+    }
+    main p {
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 153, 0.2);
+    }
+    footer {
+      background: #111;
+      padding: 0.8rem;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+    .highlight {
+      color: #ffcc00;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>hello from GitHub Pages 🚀</h1>
-    <p>this site is hosted for free on GitHub Pages.</p>
-    <p>you can edit <code>index.html</code> anytime and push changes.</p>
-  </div>
+  <header>
+    🚀 801 Home Lab – Raspberry Pi + n8n
+  </header>
+
+  <main>
+    <h1>Welcome to My 801 Home Setup</h1>
+    <p>
+      This is my little <span class="highlight">automation playground</span>, powered by 
+      <strong>Raspberry Pi</strong> and the amazing <strong>n8n workflow automation</strong> tool.  
+      It runs quietly in my 801 home corner, automating things that don’t need a human touch.
+    </p>
+
+    <div class="card">
+      <h2>✨ What’s running?</h2>
+      <ul style="text-align:left; max-width:400px; margin:auto;">
+        <li>📡 IoT device monitoring</li>
+        <li>⚡ Automated alerts (n8n + Telegram)</li>
+        <li>📊 Local dashboards for home sensors</li>
+        <li>💾 Backup scripts and data sync</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    Made with ❤️ on Raspberry Pi | Powered by n8n | 801 Home Setup
+  </footer>
 </body>
 </html>
